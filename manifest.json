@@ -1,0 +1,26 @@
+{
+    "short_name": "Brainy Bytes",
+    "name": "Welcome to Brainy Bytes App",
+    "icons": [
+      {
+        "src": "assets/maths edit.png",
+        "type": "image/png",
+        "sizes": "393x393"
+      },
+      {
+        "src": "assets/maths.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      },
+      {
+        "src": "assets/maths.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/Brainy-Bytes/",
+    "background_color": "#rgb(70, 116, 244)",
+    "theme_color": "#fff",
+    "display": "standalone",
+    "orientation": "portrait"
+  }

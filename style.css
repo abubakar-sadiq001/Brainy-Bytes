@@ -1,0 +1,347 @@
+:root {
+    --body-bg-color_1:  #FAFAFF;
+    --body-bg-color_2: rgb(212, 228, 250);
+    --header-bg-color: rgb(228, 252, 247);
+    --header-bg-color_2: rgb(70, 116, 244);
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: "MyCustomFonts";
+    src: url("./assets/fonts/FacultyGlyphic-Regular.ttf");
+}
+#overlay {
+    background: hsl(253, 61%, 32%, 0.3);
+    /* background: hsl(221, 63%, 23%); */
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    display: none;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+}
+body {
+    background-color: var(--body-bg-color_1);
+    font-family: "MyCustomFonts", sans-serif;
+}
+main {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto 0px auto;
+    position: relative;
+}
+header {
+    background: var(--header-bg-color_2);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.show-flx {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 8px;
+}
+.show-flx .logo img {
+    width: 70px;
+}
+/* Light mode icon */
+.show-flx .light {
+    color: #fff;
+    cursor: pointer;
+    width: 50px;
+} 
+/* Dark mode icon */
+.show-flx .dark {
+    color: #fff;
+    cursor: pointer;
+    width: 50px;
+    display: none;
+} 
+.unhidden {
+    display: block;
+}
+.container {
+    background-color: var(--body-bg-color_2);
+    padding: 15px 10px;
+
+}
+.container .operator-types {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: proximity;
+    gap: 10px;
+}
+.operator-types .operators {
+    background-color: rgb(228, 252, 247);
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 15px 15px;
+    font-style: italic;
+    border: 1px solid var(--header-bg-color_2);
+    cursor: pointer;
+}
+.operators a {
+    text-decoration: none;
+    color: #0c6832;
+    font-size: 16px;
+}
+.addition-contents {
+    background-color: rgba(70, 116, 244, 0.15);
+    border-radius: 4px;
+    margin: 15px 0px 0px 0px;
+    padding: 0px 5px;
+}
+.subtract-contents {
+    background-color: rgba(70, 116, 244, 0.15);
+    border-radius: 4px;
+    margin: 15px 0px 0px 0px;
+    padding: 0px 5px;
+
+}
+/* add */
+.align-center {
+    text-align: center;
+    padding: 20px 0px 5px 0px;
+    color: rgb(70, 116, 244);
+    color: rgb(28, 184, 117);
+    font-style: italic;
+    font-weight: normal;
+    word-spacing: 3px;
+}
+/* subtract heading */
+.align-center--subtrct {
+    text-align: center;
+    padding: 20px 0px 5px 0px;
+    color: rgb(70, 116, 244);
+    color: rgb(28, 184, 117);
+    font-style: italic;
+    font-weight: normal;
+    word-spacing: 3px;
+}
+.rank-score {
+    font-size: 1.5rem;
+    color: rgb(28, 184, 117);
+    padding: 15px 0px 0px 10px;
+}
+.inputs {
+    text-align: center;
+    padding: 20px 0px;
+}
+/* add input */
+.inputs #myInput {
+    max-width: 100%;
+    width: 400px;
+    border: 2px solid rgb(28, 184, 117);
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    outline: none;
+    margin-bottom: 10px;
+}
+/* subtact input */
+.inputs #subtractInput {
+    max-width: 100%;
+    width: 400px;
+    border: 2px solid rgb(28, 184, 117);
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    outline: none;
+    margin-bottom: 10px;
+}
+/* Multiplication input */
+.inputs #multiplyInput {
+    max-width: 100%;
+    width: 400px;
+    border: 2px solid rgb(28, 184, 117);
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    outline: none;
+    margin-bottom: 10px;
+}
+/* Division input */
+.inputs #divisionInput {
+    max-width: 100%;
+    width: 400px;
+    border: 2px solid rgb(28, 184, 117);
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    outline: none;
+    margin-bottom: 10px;
+}
+/* Add btn */
+.inputs #submit {
+    max-width: 100%;
+    width: 400px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    font-size: 23px;
+    cursor: pointer;
+    background-color: rgb(28, 184, 117);
+    color: hsl(0, 0%, 100%, 0.9);
+    margin-top: 10px;
+}
+/* Subtrct btn */
+.inputs #subtrct-btn {
+    max-width: 100%;
+    width: 400px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    font-size: 23px;
+    cursor: pointer;
+    background-color: rgb(28, 184, 117);
+    color: hsl(0, 0%, 100%, 0.9);
+    margin-top: 10px;
+}
+/* Multiply btn */
+.inputs #multiply-btn {
+    max-width: 100%;
+    width: 400px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    font-size: 23px;
+    cursor: pointer;
+    background-color: rgb(28, 184, 117);
+    color: hsl(0, 0%, 100%, 0.9);
+    margin-top: 10px;
+}
+/* Divide-btn btn */
+.inputs #divide-btn {
+    max-width: 100%;
+    width: 400px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    font-size: 23px;
+    cursor: pointer;
+    background-color: rgb(28, 184, 117);
+    color: hsl(0, 0%, 100%, 0.9);
+    margin-top: 10px;
+}
+#err_message {
+    font-size: 15px;
+    text-align: center;
+}
+.active {
+    border: 2px solid var(--header-bg-color_2);
+    padding: 13px 15px;
+}
+/* pop-up wrapper */ 
+.wrapper {
+    width: 100%;
+    max-width: 300px;
+    margin: 30px auto;
+    /* display: none; */
+    position: absolute;
+    z-index: 22;
+    right: 0;
+    left: 0;
+    top: 25px;
+}
+/* pop-up open */
+.pop-up {
+    background-color: #122346;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    display: none;
+    transform: translateY(10px);
+    transition: all .7s;
+}
+.pop-up .pop-up-contents {
+    padding: 0px 3px;
+    text-align: center; 
+}
+.pop-up-contents .closePop {
+    position: absolute;
+    right: 7px;
+    top: 10px;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 30px;
+    width: 40px;
+}
+.pop-up-contents .check_mark {
+    width: 150px;
+    margin: 10px 0px;
+}
+.pop-up-contents p {
+    font-size: 2rem;
+    text-align: center;
+}
+.pop-up-contents button {
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    background-color: rgb(46, 197, 99);
+    color: #fff;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    margin: 30px 0px;
+}
+
+/* pop up closed */
+.pop-up--close {
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    display: none;
+}
+.pop-up--closed-contents {
+    padding: 0px 3px;
+    text-align: center;
+}
+.pop-up--closed-contents .closePop2 {
+    position: absolute;
+    right: 7px;
+    top: 10px;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 40px;
+    width: 30px;
+}
+.pop-up--closed-contents .cancel {
+    width: 140px;
+    margin: 10px 0px;
+}
+.pop-up--closed-contents p {
+    font-size: 2rem;
+    text-align: center;
+}
+.pop-up--closed-contents button {
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    background-color: rgb(46, 197, 99);
+    color: #fff;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    margin: 30px 0px;
+}
+
+@media (max-width: 605px) {
+    main {
+        margin: 10px auto 0px auto;
+    }
+    .container {
+        background-color: var(--body-bg-color_2);
+        height: 550px;
+    }
+}
