@@ -18,9 +18,24 @@
         "sizes": "512x512"
       }
     ],
+    "id": "/Brainy-Bytes",
     "start_url": "/Brainy-Bytes/",
-    "background_color": "#rgb(70, 116, 244)",
+    "background_color": "#4674f4",
     "theme_color": "#fff",
     "display": "standalone",
-    "orientation": "portrait"
-  }
+    "orientation": "portrait",
+    "screenshots": [
+    {
+      "src": "assets/Screenshot 1.png",
+      "type": "image/png",
+      "sizes": "394x825",
+      "form_factor": "wide"
+    },
+    {
+      "src": "assets/Screenshot 2.png",
+      "type": "image/png",
+      "sizes": "406x831",
+      "form_factor": "narrow"
+    }
+  ]
+}

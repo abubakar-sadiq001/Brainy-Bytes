@@ -14,7 +14,6 @@
 }
 #overlay {
     background: hsl(253, 61%, 32%, 0.3);
-    /* background: hsl(221, 63%, 23%); */
     position: fixed;
     height: 100%;
     width: 100%;
@@ -118,7 +117,7 @@ header {
 .align-center--subtrct {
     text-align: center;
     padding: 20px 0px 5px 0px;
-    color: rgb(70, 116, 244);
+    color: #4674f4;
     color: rgb(28, 184, 117);
     font-style: italic;
     font-weight: normal;
