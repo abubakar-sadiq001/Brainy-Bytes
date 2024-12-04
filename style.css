@@ -245,7 +245,6 @@ header {
     width: 100%;
     max-width: 300px;
     margin: 30px auto;
-    /* display: none; */
     position: absolute;
     z-index: 22;
     right: 0;
@@ -333,6 +332,19 @@ header {
     width: 200px;
     height: 40px;
     margin: 30px 0px;
+}
+/* Feedback text */
+.feedbackText {
+    text-align: center;
+    padding: 15px 0px;
+    color: rgb(70, 116, 244);
+    font-style: italic;
+    font-weight: bold;
+}
+.feedbackText a {
+    color: rgb(11, 144, 82);
+    text-decoration: none;
+    border-bottom: 2px solid;
 }
 
 @media (max-width: 605px) {
