@@ -112,8 +112,8 @@
         const correct_soundEl =  document.getElementById('correct_answer');
         const err2El =  document.getElementById('err_message');
         const question =  document.querySelector('.align-center--subtrct');
-        const subtractRandom1 = Math.ceil(Math.random() * 20 + 1);
-        const subtractRandom2 = Math.ceil(Math.random() * 15 + 1);
+        const subtractRandom1 = Math.ceil(Math.random() * 10 + 1);
+        const subtractRandom2 = Math.ceil(Math.random() * 10 + 1);
         let combinedRandoms = subtractRandom1 * subtractRandom2;
         question.textContent = `What is (${subtractRandom1} * ${subtractRandom2}) ?`;
         // get data from locaStorage
@@ -137,8 +137,8 @@
                 updateStorage();
                 displayPopUp();
                 setTimeout(() => {
-                    const newSubtractRandom1 = Math.ceil(Math.random() * 30 + 1);
-                    const newSubtractRandom2 = Math.ceil(Math.random() * 20 + 1);
+                    const newSubtractRandom1 = Math.ceil(Math.random() * 10 + 1);
+                    const newSubtractRandom2 = Math.ceil(Math.random() * 15 + 1);
                     combinedRandoms = newSubtractRandom1 * newSubtractRandom2;
                     question.textContent = `What is (${newSubtractRandom1} * ${newSubtractRandom2}) ?`;
                 }, 1000);

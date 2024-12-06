@@ -8,6 +8,8 @@ const ASSETS_TO_CACHE = [
   "./divide.html",
   "./style.css",
   "/assets/background-removed-image (1).png",
+  "/assets/correct-6033.mp3",
+  "/assets/error-2-36058.mp3",
 ];
 
 // Install event: Cache resources
